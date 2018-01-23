@@ -1,3 +1,75 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://dieate.github.io/fiskavonstill.github.io/"
+languageCode = "de-de"
+defaultContentLanguage = "de-de"
+title = "Fiska von Still's Blog"
+theme = "hugo-tranquilpeak-theme"
+disqusShortname = "fiskavonstill-blog"
+
+paginate = 7
+canonifyurls = true
+
+[permalinks]
+  post = "/:year/:month/:slug/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  archive = "archives"
+
+[author]
+  name = "Fiska von Still"
+  bio = "Warum ich diesen BLog schreibe? Weil ich... ach, steht alles im BLog - lest einfach ;)"
+  job = "Multitalent"
+  location = "Berlin"
+  gravatarEmail = "fiskavonstill@gmail.com"
+  picture = "fiskavonstill_img.jpg"
+
+# Menu Configuration
+[[menu.main]]
+  weight = 1
+  identifier = "home"
+  name = "Home"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+  url = "/"
+[[menu.main]]
+  weight = 2
+  identifier = "categories"
+  name = "Categories"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
+  url = "/categories"
+[[menu.main]]
+  weight = 3
+  identifier = "tags"
+  name = "Tags"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
+  url = "/tags"
+[[menu.main]]
+  weight = 4
+  identifier = "archives"
+  name = "Archives"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
+  url = "/archives"
+[[menu.main]]
+  weight = 5
+  identifier = "about"
+  name = "About"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
+  url = "/#about"
+
+[params]
+  dateFormat = "2 January 2006"
+  clearReading = true
+  description = "Dies ist der Blog von Fiska von Still"
+  sidebarBehavior = 1
+  coverImage = "cover.jpg"
+  imageGallery = true
+  thumbnailImage = true
+  thumbnailImagePosition = "bottom"
+  autoThumbnailImage = true
+  [[params.sharingOptions]]
+    name = "Facebook"
+    icon = "fa-facebook-official"
+    url = "https://www.facebook.com/sharer/sharer.php?u=%s"
+
+  [params.footer]
+    copyright = "Fiska von Still"
